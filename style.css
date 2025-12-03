@@ -398,7 +398,6 @@ textarea:focus {
 
 
 
-
 /* ============================================================
    📱 OPTIMISATION MOBILE (≤ 480px)
 ============================================================ */
@@ -455,7 +454,7 @@ textarea:focus {
 
     .btn-usb {
         position: absolute;
-        bottom: 20px; /* touche le bloc test typo */
+        bottom: 10px; /* touche le bloc test typo */
         right: 10px;
         display: block;
         z-index: 9999;
@@ -527,15 +526,13 @@ textarea:focus {
     }
     .site-footer .footer-text {
         position: absolute;
-        top: 5%; /* remonte le texte */
+        top: 10%; /* remonte le texte */
         left: 50%;
         transform: translateX(-50%);
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         white-space: nowrap;
         padding: 0 0.5rem;
         text-shadow: 0 0 8px rgba(255,255,255,0.8);
     }
 
 }
-
-
