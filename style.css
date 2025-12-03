@@ -414,7 +414,7 @@ textarea:focus {
 
 
 /* ============================================================
-   📱 OPTIMISATION MOBILE (≤ 480px) CORRIGÉE V2
+   📱 OPTIMISATION MOBILE (≤ 480px) CORRIGÉE V3
 ============================================================ */
 @media (max-width: 480px) {
 
@@ -465,7 +465,7 @@ textarea:focus {
         max-width: 100%;
     }
     .btn-usb {
-        bottom: -30px;
+        bottom: -10px;  /* descendu pour plus d'espace */
         right: 5px;
     }
     .btn-usb img {
@@ -489,40 +489,50 @@ textarea:focus {
     }
 
     /* -------------------- TEST TYPO -------------------- */
-.test-area {
-    width: 100%;                
-    display: flex;              
-    flex-direction: column;     
-    justify-content: center;
-    align-items: center;        
-    margin-top: 20px; /* ↑ augmente la marge-top pour descendre le bloc */
-    text-align: center;
-}
+    .test-area {
+        width: 100%;                
+        display: flex;              
+        flex-direction: column;     
+        justify-content: center;
+        align-items: center;        
+        margin-top: 0px; /* bloc remonté pour toucher le bouton download */
+        text-align: center;
+    }
 
-textarea {
-    width: 1030px;
-    max-width: 1200px;            
-    height: 300px;
-    padding: 1rem;
-    margin-bottom: 30px;
+    textarea {
+        width: 94%;           /* même largeur que le carrousel */
+        max-width: 100%;            
+        height: 200px;        /* réduit un peu pour mobile */
+        padding: 1rem;
+        margin-bottom: 20px;
 
-    border: 1px solid black;
-    background: rgba(255,255,255,0.4);
-    backdrop-filter: blur(10px);
-    font-family: 'Blancs2Plomb', sans-serif;
-    font-size: 3.5rem;
-    transition: box-shadow 0.3s ease;
-}
+        border: 1px solid black;
+        background: rgba(255,255,255,0.4);
+        backdrop-filter: blur(10px);
+        font-family: 'Blancs2Plomb', sans-serif;
+        font-size: 2rem;       /* ajusté pour mobile */
+        transition: box-shadow 0.3s ease;
+    }
 
-textarea:focus {
-    outline: none;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-}
+    textarea:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .size-slider {
+        width: 94%;           /* largeur identique au textarea */
+    }
+
+    .size-slider input[type="range"]::-webkit-slider-thumb,
+    .size-slider input[type="range"]::-moz-range-thumb {
+        width: 35px;
+        height: 35px;
+    }
 
     /* ---------- CARROUSEL ---------- */
     .carousel-pro {
         margin: 2rem auto 1rem;
-        width: 100%;
+        width: 94%;           /* même largeur que textarea */
         max-width: 100%;
     }
     .carousel-pro img {
@@ -546,3 +556,4 @@ textarea:focus {
         text-shadow: 0 0 8px rgba(255,255,255,0.8);
     }
 }
+
