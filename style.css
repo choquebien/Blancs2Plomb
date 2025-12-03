@@ -526,7 +526,7 @@ textarea:focus {
 
     /* ---------- FOOTER ---------- */
     .site-footer {
-        margin-top: 3rem;
+        margin-top: 100px;
     }
     .site-footer .footer-bg {
         width: 100%;
@@ -534,7 +534,7 @@ textarea:focus {
     }
     .site-footer .footer-text {
         top: 100%; /* remonte légèrement le texte */
-        font-size: 0.6rem; 
+        font-size: 0.9rem; 
         white-space: nowrap; /* tout sur une ligne */
         padding: 0 0.5rem;
         text-shadow: 0 0 8px rgba(255,255,255,0.8);
