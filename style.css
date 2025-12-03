@@ -425,7 +425,7 @@ textarea:focus {
 
     /* ---------- HEADER ---------- */
     header {
-        margin-top: 80px; /* espace pour éviter chevauchement */
+        margin-top: 90px; /* espace pour éviter chevauchement */
         margin-bottom: 20px;
         padding: 0;
     }
@@ -521,8 +521,8 @@ textarea:focus {
         height: auto;
     }
     .site-footer .footer-text {
-        top: 15%; /* remonte légèrement le texte */
-        font-size: 0.7rem; /* petite réduction */
+        top: 16%; /* remonte légèrement le texte */
+        font-size: 0.6rem; /* petite réduction */
         white-space: nowrap; /* tout sur une ligne */
         padding: 0 0.5rem;
         text-shadow: 0 0 8px rgba(255,255,255,0.8);
