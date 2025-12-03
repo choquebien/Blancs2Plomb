@@ -416,6 +416,7 @@ textarea:focus {
 /* ============================================================
    📱 OPTIMISATION MOBILE (≤ 480px)
 ============================================================ */
+
 @media (max-width: 480px) {
 
     /* ---------- GLOBAL ---------- */
@@ -426,12 +427,12 @@ textarea:focus {
 
     /* ---------- HEADER ---------- */
     header {
-        margin-top: 80px; /* plus d'espace pour le header */
+        margin-top: 80px;
         margin-bottom: 20px;
         padding: 0;
     }
     header h1 {
-        font-size: 2.5rem; /* header plus visible */
+        font-size: 2.5rem;
         line-height: 2.8rem;
         margin: 0;
     }
@@ -455,10 +456,11 @@ textarea:focus {
         height: 75px;
     }
 
-    * ---------- IMAGE + USB DL ---------- */
+    /* ---------- IMAGE + USB DL ---------- */
     .image-wrapper {
         width: 100%;
         margin-top: 0.5rem;
+        position: relative; /* important pour que .btn-usb se positionne par rapport à ce bloc */
     }
 
     #image1 {
@@ -468,7 +470,7 @@ textarea:focus {
 
     .btn-usb {
         position: absolute;
-        bottom: 20px;    /* touche le bloc test typo */
+        bottom: -20px; /* ajuste pour toucher le bloc test typo */
         right: 10px;
         display: block;
         z-index: 9999;
@@ -484,14 +486,17 @@ textarea:focus {
     .btn-usb:hover {
         transform: scale(1.1);
     }
+
     /* ---------- INFOBOX ---------- */
     #info-box .info-content {
         width: 92%;
         max-width: none;
-        transform: scale(0.95); /* un peu plus grand sur mobile */
+        transform: scale(0.95);
+        max-height: 90%;
+        overflow-y: auto;
     }
     .info-text {
-        font-size: 1.2rem; /* plus lisible */
+        font-size: 1.2rem;
         top: 12%;
         bottom: 12%;
         left: 6%;
@@ -500,11 +505,11 @@ textarea:focus {
 
     /* ---------- TEST TYPO ---------- */
     .test-area {
-        margin-top: 2rem;
+        margin-top: 0; /* remonte pour toucher le download */
     }
     textarea {
         width: 94%;
-        font-size: 1.7rem !important; /* texte plus lisible */
+        font-size: 1.7rem !important;
         height: 160px;
         padding: 0.8rem;
     }
@@ -512,7 +517,6 @@ textarea:focus {
     .size-slider {
         width: 95%;
     }
-
     .size-slider input[type="range"]::-webkit-slider-thumb,
     .size-slider input[type="range"]::-moz-range-thumb {
         width: 40px;
@@ -541,7 +545,7 @@ textarea:focus {
 
     .site-footer .footer-text {
         position: absolute;
-        top: 5%;          /* remonte le texte */
+        top: 2%; /* remonte plus le texte */
         left: 50%;
         transform: translateX(-50%);
         font-size: 0.8rem;
