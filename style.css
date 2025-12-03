@@ -164,7 +164,7 @@ header h1 {
     flex-direction: column;     /* empile le textarea + slider */
     justify-content: center;
     align-items: center;        /* ❤️ centre horizontalement */
-    margin: 6rem auto 2rem;
+    margin: 2rem auto 2rem;
     text-align: center;
 
 }
