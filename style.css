@@ -502,7 +502,7 @@ textarea:focus {
         height: 180px;           /* hauteur similaire au carrousel */
         max-height: 180px;
         padding: 0.5rem;
-        font-size: 1.6rem !important;
+        font-size: 9rem !important;
         box-sizing: border-box;
         border: 1px solid black;
         background: rgba(255,255,255,0.4);
