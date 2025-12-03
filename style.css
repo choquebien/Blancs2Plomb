@@ -398,141 +398,97 @@ textarea:focus {
 
 
 
-/* ============================================================
+  /* -------------------------------------------
    📱 OPTIMISATION MOBILE (≤ 480px)
-============================================================ */
+------------------------------------------- */
 @media (max-width: 480px) {
 
-    /* ---------- GLOBAL ---------- */
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
-    /* ---------- HEADER ---------- */
+    /* --- HEADER --- */
     header {
-        margin-top: 80px; /* plus d'espace pour le header */
-        margin-bottom: 20px;
-        padding: 0;
+        margin-top: 40px;
+        margin-bottom: 0;
+        padding: 0.5rem;
     }
     header h1 {
-        font-size: 2.5rem; /* header plus visible */
-        line-height: 2.8rem;
-        margin: 0;
+        font-size: 1.8rem;
+        line-height: 2rem;
     }
 
-    /* ---------- DONATE ---------- */
-    .donate-btn {
-        top: 10px;
-        right: 10px;
+    /* --- BOUTONS FIXES --- */
+    .info-toggle img {
+        width: 80px;
+        height: 80px;
     }
     .donate-btn img {
-        width: 120px;
+        width: 130px;
     }
 
-    /* ---------- ROUE ATOME ---------- */
-    .info-toggle {
-        top: 10px;
-        left: 10px;
-    }
-    .info-toggle img {
-        width: 75px;
-        height: 75px;
-    }
-
-    /* ---------- IMAGE + USB DL ---------- */
-    .image-wrapper {
-        width: 100%;
-        margin-top: 0.5rem;
-        position: relative; /* important pour positionner le bouton correctement */
-    }
-
-    #image1 {
-        width: 100%;
+    /* --- IMAGES PRINCIPALES --- */
+    #image1,
+    #image2 {
         max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .images-container {
+        padding: 0;
+        margin: 1rem 0;
+        gap: 0.5rem;
+        flex-direction: column; /* évite les débordements */
     }
 
-    .btn-usb {
-        position: absolute;
-        bottom: 10px; /* touche le bloc test typo */
-        right: 10px;
-        display: block;
-        z-index: 9999;
-        cursor: pointer;
-        transition: transform 0.25s ease;
-    }
-
-    .btn-usb img {
-        width: 150px;
-        height: auto;
-    }
-
-    .btn-usb:hover {
-        transform: scale(1.1);
-    }
-
-    /* ---------- INFOBOX ---------- */
+    /* --- INFOBOX --- */
     #info-box .info-content {
-        width: 92%;
-        max-width: none;
-        transform: scale(0.95); /* un peu plus grand sur mobile */
+        width: 90%;
+        max-width: 90%;
     }
     .info-text {
-        font-size: 1.2rem; /* plus lisible */
-        top: 12%;
-        bottom: 12%;
-        left: 6%;
-        right: 6%;
+        font-size: 0.9rem;
+        top: 10%;
+        bottom: 10%;
+        left: 7%;
+        right: 7%;
     }
 
-    /* ---------- TEST TYPO ---------- */
-    .test-area {
-        margin-top: 2rem;
-    }
+    /* --- TEXTAREA --- */
     textarea {
-        width: 94%;
-        font-size: 1.7rem !important; /* texte plus lisible */
-        height: 160px;
-        padding: 0.8rem;
+        width: 95%;
+        font-size: 1.4rem;
+        height: 130px;
     }
 
+    /* --- SLIDER --- */
     .size-slider {
         width: 95%;
+        margin-top: 1rem;
     }
-
     .size-slider input[type="range"]::-webkit-slider-thumb,
     .size-slider input[type="range"]::-moz-range-thumb {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
 
-    /* ---------- CARROUSEL ---------- */
+    /* --- CARROUSEL --- */
     .carousel-pro {
-        margin: 2rem auto 1rem;
-    }
-    .carousel-pro img {
-        width: 100%;
+        margin: 1.5rem auto;
     }
 
-    /* ---------- FOOTER ---------- */
+    /* --- BOUTON USB --- */
+    .btn-usb {
+        bottom: -90px;   /* moins bas pour éviter que ça dépasse l’écran */
+        right: 10px;
+    }
+    .btn-usb img {
+        width: 180px;
+    }
+
+    /* --- FOOTER --- */
     .site-footer {
         margin-top: 2rem;
-        position: relative;
-        width: 100%;
-    }
-    .site-footer .footer-bg {
-        width: 100%;
-        height: auto;
     }
     .site-footer .footer-text {
-        position: absolute;
-        top: 10%; /* remonte le texte */
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.9rem;
-        white-space: nowrap;
-        padding: 0 0.5rem;
-        text-shadow: 0 0 8px rgba(255,255,255,0.8);
+        font-size: 0.8rem;
+        white-space: normal; /* autorise retour à la ligne sur mobile */
+        padding: 0;
     }
-
 }
