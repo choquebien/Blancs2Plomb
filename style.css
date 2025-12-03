@@ -150,7 +150,7 @@ header h1 {
     bottom: 9%;
     overflow: auto;     /* empêche le dépassement */
     color: rgb(0, 0, 0);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 /* Effet d'apparition (remis comme avant) */
 #info-box.active .info-content {
@@ -495,7 +495,7 @@ textarea:focus {
     flex-direction: column;     
     justify-content: center;
     align-items: center;        
-    margin: 10rem auto 2rem;    /* ↑ augmente la marge-top pour descendre le bloc */
+    margin-top: 100px; /* ↑ augmente la marge-top pour descendre le bloc */
     text-align: center;
 }
 
