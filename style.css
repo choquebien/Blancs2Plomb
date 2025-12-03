@@ -402,116 +402,31 @@ textarea:focus {
 ============================================================ */
 @media (max-width: 480px) {
 
-    /* ---------- GLOBAL ---------- */
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
     /* ---------- HEADER ---------- */
     header {
-        margin-top: 60px;
+        margin-top: 80px; /* plus d'espace au-dessus */
         margin-bottom: 10px;
         padding: 0;
     }
     header h1 {
-        font-size: 2rem;
-        line-height: 2.2rem;
+        font-size: 2.5rem;    /* plus lisible */
+        line-height: 2.8rem;  /* éloigne du donate et roue atomes */
         margin: 0;
     }
 
-    /* ---------- DONATE ---------- */
-    .donate-btn {
-        top: 10px;
-        right: 10px;
-    }
-    .donate-btn img {
-        width: 120px;
-    }
-
-    /* ---------- ROUE ATOME ---------- */
-    .info-toggle {
-        top: 10px;
-        left: 10px;
-    }
-    .info-toggle img {
-        width: 75px;
-        height: 75px;
-    }
-
-    /* ---------- IMAGE + USB DL ---------- */
-    .image-wrapper {
-        width: 100%;
-        margin-top: 0.5rem;
-    }
-    #image1 {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .btn-usb {
-        bottom: -60px;
-        right: 10px;
-    }
-    .btn-usb img {
-        width: 150px;
-    }
-
-    /* ---------- INFOBOX ---------- */
-    #info-box .info-content {
-        width: 92%;
-        max-width: none;
-        transform: scale(0.9);
-    }
-    .info-text {
-        font-size: 0.9rem;
-        top: 12%;
-        bottom: 12%;
-        left: 6%;
-        right: 6%;
-    }
-
-    /* ---------- TEST TYPO ---------- */
-    .test-area {
-        margin-top: 5rem;
-    }
-    textarea {
-        width: 94%;
-        font-size: 1.4rem !important;
-        height: 140px;
-        padding: 0.8rem;
-    }
-
-    .size-slider {
-        width: 95%;
-    }
-
+    /* ---------- SLIDER TACTILE ---------- */
     .size-slider input[type="range"]::-webkit-slider-thumb,
     .size-slider input[type="range"]::-moz-range-thumb {
-        width: 35px;
-        height: 35px;
-    }
-
-    /* ---------- CARROUSEL ---------- */
-    .carousel-pro {
-        margin: 2rem auto 1rem;
-    }
-    .carousel-pro img {
-        width: 100%;
+        width: 45px;    /* plus facile à toucher */
+        height: 45px;
+        margin-top: -5px; /* ajuste verticalement si nécessaire */
     }
 
     /* ---------- FOOTER ---------- */
-    .site-footer {
-        margin-top: 3rem;
-    }
-    .site-footer .footer-bg {
-        width: 100%;
-        height: auto;
-    }
     .site-footer .footer-text {
         top: 20%;
         font-size: 0.75rem;
-        white-space: normal; /* 🔥 permet le retour à la ligne */
+        white-space: nowrap; /* garde tout sur une ligne */
         padding: 0 0.5rem;
         text-shadow: 0 0 8px rgba(255,255,255,0.8);
     }
