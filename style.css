@@ -487,7 +487,7 @@ textarea:focus {
 
     /* ---------- TEST TYPO ---------- */
     .test-area {
-        margin-top: 3rem;
+        margin-top: 0rem;
     }
     textarea {
         width: 94%;
@@ -521,7 +521,7 @@ textarea:focus {
         height: auto;
     }
     .site-footer .footer-text {
-        top: 20%; /* remonte légèrement le texte */
+        top: 22%; /* remonte légèrement le texte */
         font-size: 0.6rem; /* petite réduction */
         white-space: nowrap; /* tout sur une ligne */
         padding: 0 0.5rem;
