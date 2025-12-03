@@ -398,9 +398,7 @@ textarea:focus {
 
 
 
-/* ============================================================
-   📱 OPTIMISATION MOBILE (≤ 480px) CORRIGÉE
-============================================================ */
+
 /* ============================================================
    📱 OPTIMISATION MOBILE (≤ 480px)
 ============================================================ */
@@ -447,18 +445,31 @@ textarea:focus {
     .image-wrapper {
         width: 100%;
         margin-top: 0.5rem;
+        position: relative; /* important pour positionner le bouton correctement */
     }
+
     #image1 {
         width: 100%;
         max-width: 100%;
     }
 
     .btn-usb {
-        bottom: -60px;
+        position: absolute;
+        bottom: 20px; /* touche le bloc test typo */
         right: 10px;
+        display: block;
+        z-index: 9999;
+        cursor: pointer;
+        transition: transform 0.25s ease;
     }
+
     .btn-usb img {
         width: 150px;
+        height: auto;
+    }
+
+    .btn-usb:hover {
+        transform: scale(1.1);
     }
 
     /* ---------- INFOBOX ---------- */
@@ -468,7 +479,7 @@ textarea:focus {
         transform: scale(0.95); /* un peu plus grand sur mobile */
     }
     .info-text {
-        font-size: 1rem; /* plus lisible */
+        font-size: 1.2rem; /* plus lisible */
         top: 12%;
         bottom: 12%;
         left: 6%;
@@ -477,11 +488,11 @@ textarea:focus {
 
     /* ---------- TEST TYPO ---------- */
     .test-area {
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
     textarea {
         width: 94%;
-        font-size: 1.6rem !important; /* texte plus lisible */
+        font-size: 1.7rem !important; /* texte plus lisible */
         height: 160px;
         padding: 0.8rem;
     }
@@ -506,18 +517,25 @@ textarea:focus {
 
     /* ---------- FOOTER ---------- */
     .site-footer {
-        margin-top: 3rem;
+        margin-top: 2rem;
+        position: relative;
+        width: 100%;
     }
     .site-footer .footer-bg {
         width: 100%;
         height: auto;
     }
     .site-footer .footer-text {
-        top: 20%;
-        font-size: 0.75rem;
-        white-space: nowrap; /* garde tout sur une seule ligne */
+        position: absolute;
+        top: 5%; /* remonte le texte */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8rem;
+        white-space: nowrap;
         padding: 0 0.5rem;
         text-shadow: 0 0 8px rgba(255,255,255,0.8);
     }
+
 }
+
 
