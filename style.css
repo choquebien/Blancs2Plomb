@@ -466,7 +466,7 @@ textarea:focus {
     }
 
     .btn-usb {
-        bottom: 100px;
+        bottom: -200px;
         right: 10px;
     }
     .btn-usb img {
@@ -525,7 +525,7 @@ textarea:focus {
         height: auto;
     }
     .site-footer .footer-text {
-        top: 80%;
+        top: 10px;
         font-size: 0.8rem;
         white-space: nowrap; /* garde tout sur une seule ligne */
         padding: 0 0.5rem;
