@@ -108,6 +108,34 @@
         });
     </script>
 
+    <!-- -------------------- SLIDER / WHEEL -------------------- -->
+<div class="test-area fade-in">
+    <textarea id="text-sample" placeholder="Hit !"></textarea>
+
+    <div class="size-slider">
+        <input type="range" id="size-control" min="10" max="100" value="40">
+    </div>
+</div>
+
+<!-- -------------------- JS POUR ROULE DENTEE -------------------- -->
+<script>
+    const textarea = document.getElementById('text-sample');
+    const slider = document.getElementById('size-control');
+
+    // Mettre la taille initiale
+    textarea.style.fontSize = slider.value + "px";
+
+    slider.addEventListener('input', () => {
+        const size = slider.value + "px";
+        textarea.style.fontSize = size; // change la taille en direct
+
+        // rotation du curseur en fonction de la valeur
+        const rotation = slider.value * 4; 
+        slider.style.setProperty('--thumb-rotation', rotation + 'deg');
+    });
+</script>
+
+
     <!-- CARROUSEL -->
     <div class="carousel-pro fade-in">
         <img id="carousel-pro-image" src="images/imageBAS1.png" alt="Carrousel">
