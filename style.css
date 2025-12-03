@@ -495,7 +495,7 @@ textarea:focus {
     flex-direction: column;     
     justify-content: center;
     align-items: center;        
-    margin: 6rem auto 2rem;    /* ↑ augmente la marge-top pour descendre le bloc */
+    margin: 10rem auto 2rem;    /* ↑ augmente la marge-top pour descendre le bloc */
     text-align: center;
 }
 
@@ -504,7 +504,6 @@ textarea {
     max-width: 1200px;            
     height: 300px;
     padding: 1rem;
-    margin-top: 0px;           /* ← on peut enlever le -50px qui remontait le bloc */
     margin-bottom: 30px;
 
     border: 1px solid black;
