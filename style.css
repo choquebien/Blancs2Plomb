@@ -164,15 +164,16 @@ header h1 {
     flex-direction: column;     /* empile le textarea + slider */
     justify-content: center;
     align-items: center;        /* ❤️ centre horizontalement */
-    margin: 3rem auto 1rem;
+    margin: 6rem auto 2rem;
     text-align: center;
+
 }
 textarea {
     width: 1030px;
     max-width: 1200px;            
     height: 300px;
     padding: 1rem;
-    margin-top: -50px;
+    margin-top: 0px;
     margin-bottom: 30px;
 
     /* --- Contour noir --- */
