@@ -455,36 +455,35 @@ textarea:focus {
         height: 75px;
     }
 
-    /* ---------- IMAGE + USB DL ---------- */
-.image-wrapper {
-    width: 100%;
-    margin-top: 0.5rem;
-}
+    * ---------- IMAGE + USB DL ---------- */
+    .image-wrapper {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
 
-#image1 {
-    width: 100%;
-    max-width: 100%;
-}
+    #image1 {
+        width: 100%;
+        max-width: 100%;
+    }
 
-.btn-usb {
-    position: absolute;     /* s’assure que le positionnement est relatif à l’image */
-    bottom: 20px;           /* descendu pour toucher le bloc test typo */
-    right: 10px;
-    display: block;
-    z-index: 9999;
-    cursor: pointer;
-    transition: transform 0.25s ease;
-}
+    .btn-usb {
+        position: absolute;
+        bottom: 20px;    /* touche le bloc test typo */
+        right: 10px;
+        display: block;
+        z-index: 9999;
+        cursor: pointer;
+        transition: transform 0.25s ease;
+    }
 
-.btn-usb img {
-    width: 150px;
-    height: auto;
-}
+    .btn-usb img {
+        width: 150px;
+        height: auto;
+    }
 
-.btn-usb:hover {
-    transform: scale(1.1);
-}
-
+    .btn-usb:hover {
+        transform: scale(1.1);
+    }
     /* ---------- INFOBOX ---------- */
     #info-box .info-content {
         width: 92%;
@@ -529,24 +528,26 @@ textarea:focus {
     }
 
     /* ---------- FOOTER ---------- */
-.site-footer {
-    margin-top: 2rem;       /* moins d’espace au-dessus pour remonter le footer */
-    position: relative;
-    width: 100%;
-}
+    .site-footer {
+        margin-top: 2rem;
+        position: relative;
+        width: 100%;
+    }
 
-.site-footer .footer-bg {
-    width: 100%;
-    height: auto;
-}
+    .site-footer .footer-bg {
+        width: 100%;
+        height: auto;
+    }
 
-.site-footer .footer-text {
-    position: absolute;
-    top: 5%;                /* remonte le texte par rapport au bas de l’image */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.8rem;
-    white-space: nowrap;    /* garde tout sur une seule ligne */
-    padding: 0 0.5rem;
-    text-shadow: 0 0 8px rgba(255,255,255,0.8);
+    .site-footer .footer-text {
+        position: absolute;
+        top: 5%;          /* remonte le texte */
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8rem;
+        white-space: nowrap;
+        padding: 0 0.5rem;
+        text-shadow: 0 0 8px rgba(255,255,255,0.8);
+    }
+
 }
