@@ -464,8 +464,8 @@ textarea:focus {
         max-width: 100%;
     }
     .btn-usb {
-        bottom: -60px;
-        right: 10px;
+        bottom: -30px;
+        right: 5px;
     }
     .btn-usb img {
         width: 150px;
