@@ -524,7 +524,7 @@ textarea:focus {
         height: auto;
     }
     .site-footer .footer-text {
-        top: 22%; /* remonte légèrement le texte */
+        top: 100%; /* remonte légèrement le texte */
         font-size: 0.6rem; 
         white-space: nowrap; /* tout sur une ligne */
         padding: 0 0.5rem;
