@@ -526,7 +526,7 @@ textarea:focus {
 
     /* ---------- FOOTER ---------- */
     .site-footer {
-        margin-top: 100px;
+        margin-top: 0px;
     }
     .site-footer .footer-bg {
         width: 100%;
